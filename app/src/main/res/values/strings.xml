@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Business Card App</string>
+    <string name="full_name">Serhat ERDEM</string>
+    <string name="title">Software Engineer at Projemya</string>
+    <string name="mail">serhaterdem@projemya.com</string>
+    <string name="phone_number">+90 (212) 345 12 21</string>
+    <string name="linkedin">\@serhaterdem</string>
+    <string name="address">221 B Baker Street</string>
+</resources>
