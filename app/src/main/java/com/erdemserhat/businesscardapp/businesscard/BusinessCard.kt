@@ -1,4 +1,4 @@
-package com.erdemserhat.businesscardapp
+package com.erdemserhat.businesscardapp.businesscard
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,10 +8,8 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredSize
-import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -24,10 +22,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.erdemserhat.businesscardapp.R
 import com.erdemserhat.businesscardapp.ui.theme.BusinessCardAppTheme
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
-class MainActivity : ComponentActivity() {
+class BusinessCard : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -82,7 +80,7 @@ fun ContactInformation(titleId: Int, imageId: Int, modifier: Modifier = Modifier
 
 @Composable
 fun BusinessCard(modifier: Modifier = Modifier) {
-    val image = painterResource(id = R.drawable.software_engineer_graphic_clipart_design_free_png       )
+    val image = painterResource(id = R.drawable.software_engineer_graphic_clipart_design_free_png)
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top,
@@ -117,9 +115,8 @@ fun BusinessCard(modifier: Modifier = Modifier) {
         Column(
             horizontalAlignment = Alignment.Start
         ) {
-            ContactInformation(titleId = R.string.mail, imageId = R.drawable.mailicon)
+            ContactInformation(titleId = R.string.mail, imageId = R.drawable.baseline_mail_24)
             ContactInformation(titleId = R.string.phone_number, imageId = R.drawable.baseline_local_phone_24)
-            ContactInformation(titleId = R.string.linkedin, imageId = R.drawable.lnk)
             ContactInformation(titleId = R.string.address, imageId = R.drawable.baseline_my_location_24)
 
 

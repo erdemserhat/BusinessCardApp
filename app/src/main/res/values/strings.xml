@@ -6,4 +6,5 @@
     <string name="phone_number">+90 (212) 345 12 21</string>
     <string name="linkedin">\@serhaterdem</string>
     <string name="address">221 B Baker Street</string>
+    <string name="title_activity_business_card">BusinessCard</string>
 </resources>
